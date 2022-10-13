@@ -84,6 +84,7 @@ export default function ThemeComponent(props) {
 
   return (
     <>
+
       <button id="button" onClick={handleNChange} className="btn fade-in" type="button">
       toggleNorthTheme
       </button>
@@ -100,9 +101,14 @@ export default function ThemeComponent(props) {
       <button id="button"  className="btn " type="button" onClick={handleChange}>
       toggleEnter
       </button>
+      <br>
+      </br>
+      <section className="text-center">
+        current : "{ createClassName() }"
+      </section>    
 
       <img src={dog}  width="50" height="50" className ={ createClassName() } />
-      {/* <img src={dog}  width="50" height="50" className ={ fade ? "fade-in dog" : "fade-out dog"} /> */}
+      
     </>
   );
 }

@@ -8,12 +8,7 @@ export default function ThemeComponent() {
 
   return (
     <>
-      <section className="text-center">
-        The current value of{' '}
-        <code style={{ fontWeight: 'bold' }}>
-          {/* darkTheme: {darkTheme.toString()} */}
-        </code>
-      </section>
+
         <Dog />
     </>
   );
