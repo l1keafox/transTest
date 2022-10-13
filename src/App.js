@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from 'react';
+import ThemeComponent from './components/ThemeComponent';
+// Importing our theme provider which will make our global state available to child components
+import ThemeProvider from './utils/ThemeContext';
 
-function App() {
+export default function App() {
+  useEffect(() => {
+    document.title = 'Module 22.1: Consumers';
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider>
+      <ThemeComponent />
+    </ThemeProvider>
   );
 }
-
-export default App;

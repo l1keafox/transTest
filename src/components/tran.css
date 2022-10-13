@@ -1,0 +1,31 @@
+.fade-in {
+    transition: opacity 1s ease;
+}
+.fade-out {
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.dog {
+    position: absolute;
+    left: 500px;
+    top: 500px;
+    transition: top 1s ease, opacity 1s ease, left 1s ease;
+  }
+
+.move-north{
+    top:200px;
+    transition: top 1s ease;
+}
+.move-south{
+    top:700px;
+    transition: top 1s ease;
+}
+.move-east{
+    left:700px;
+    transition: left 1s ease;
+}
+.move-west{
+    left:200px;
+    transition: left 1s ease;
+}
